@@ -10,7 +10,7 @@ header,.content{
 
   .nav {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       height: 100vh;
       list-style: none;
       justify-content:space-around;
@@ -43,9 +43,17 @@ header,.content{
 (2) Agrega el código necesartio de flex para que los elementos de navegación aparezcan en filas como en la imagen.
 */
         height: auto;
+        flex-direction: row;
+        justify-content:center;
+        align-items: stretch;
     
       }
-
+      .nav > li {
+        margin: 2px;
+        flex-basis: auto;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
 
 
       .content{
@@ -89,8 +97,9 @@ header,.content{
     header {
 /*
 (3) Agrega codigo flex para que aparezcan los encabezados. (Solo necesitas activar flex)
-
+      
 */      
+display: flex;
       }
 
       .nav {
@@ -98,8 +107,19 @@ header,.content{
 (3.1) Utiliza el mismo .nav del media query anterior
 */
         height: auto;
+        height: auto;
+        flex-direction: row;
+        justify-content:center;
+        align-items: stretch;
 
       }
+      .nav > li {
+        margin: 2px;
+        flex-basis: auto;
+        flex-wrap: no;
+        padding-left: 7em;
+        padding-right: 7em;
+    }
 
     h2 {
         border: solid;
@@ -141,7 +161,8 @@ header,.content{
 (4) Agrega codigo flex papara modificar el posicionamiento de los articulos en columnas.
 
 */   
-
+        display: flex;
+        flex-direction: row;
           width: 70%;
       }
     
